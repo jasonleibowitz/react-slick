@@ -9,7 +9,7 @@
     "test": "jest",
     "dev-test": "jest --watch",
     "lint": "eslint src",
-    "preinstall": "npm run prepublish"
+    "preinstall": "babel ./src --out-dir ./lib && gulp dist"
   },
   "author": "Kiran Abburi",
   "license": "MIT",
